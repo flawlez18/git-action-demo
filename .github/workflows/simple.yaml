@@ -3,7 +3,7 @@ name: shell commands
 on: pull_request
 
 jobs:
-    run-shell command:
+    run-shell-command:
 
         runs-on: ubuntu-latest
         steps:
