@@ -1,6 +1,6 @@
 name: shell commands
 
-on: pull_request
+on: [push]
 
 jobs:
     run-shell-command:
@@ -10,6 +10,7 @@ jobs:
             - name: checkout code 
               uses: actions/checkout@v3
             - name: echo string
+              run: echo "Hello"
             - name: Multiline script
               run: |
                 node -v
